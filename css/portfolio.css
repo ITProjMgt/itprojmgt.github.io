@@ -177,6 +177,11 @@ hr {
 	
 }
 
+.portfolioImage {
+  height: 300px;
+  width: 300px;
+}
+
 .connectSection {
 	color: white;
 	width: 100%;
