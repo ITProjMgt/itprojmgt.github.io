@@ -1,0 +1,360 @@
+/*color options*/
+/*Silver: #C0C0C0; */
+/*grayish blue: #2c3e50; */
+/*dark blue: #00004d; */
+/*light gray: #adbfd2; */
+/*light yellow: #ffff99; */
+/*UnSplash Images*/
+/*office: https://goo.gl/Vr8Cfp  */
+/*architecture: https://goo.gl/bz0XSI  */
+/*landscape - cloud shadow: https://goo.gl/8I89BR  */
+/*landscape - Park City: http://goo.gl/ETZcJO  */
+/*landscpae - zermat - https://goo.gl/Ej3xYI  */
+/*sky: https://goo.gl/8ZEjY8  */
+/*Air Force: https://goo.gl/06j4b3 */
+/*Code: https://unsplash.com/photos/xekxE_VR0Ec */
+/*office-local: ./assets/images/projectDesktop.jpg */
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    background-color: #2c3e50;
+}
+
+hr
+{
+    color: #c0c0c0;
+    border-top: 2px solid #c0c0c0;
+    border-bottom: 2px solid rgba(0,0,0,.2);
+}
+
+img.navbarLogo {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.socialButton
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navbar-inverse
+{
+    background-color: #c0c0c0;
+}
+
+.navbar-inverse .navbar-brand
+{
+    color: #000;
+}
+
+.navbar-inverse .navbar-nav .nav-link
+{
+    background: color: #00004d;
+}
+
+.navbar-inverse .navbar-toggler
+{
+    border-color: #00004d;
+}
+
+.navbar-inverse .navbar-toggler-icon {
+    color: #00004d;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+    color: #00004d;
+}
+
+.nav-link > a:hover,
+.nav-link > a:focus
+{
+    /*background-color: #adbfd2;*/
+    color: #2c3e50;
+}
+
+/***********************************
+        Home Section
+***********************************/
+.homeSection
+{
+    width: 100%;
+    /*height: auto;*/
+    height: 800px;
+    padding-bottom: 100px;
+    background: url("../images/parkCityUtah.png") no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: 100% 100%;
+            background-size: cover;
+}
+
+#homeContent
+{
+    padding-top: 25%;
+    padding-right: 15%;
+    padding-left: 15%;
+    color: white;
+    text-align: center;
+}
+
+#homeContent > h1
+{
+    font-size: 4em;
+    font-weight: 700;
+
+    /*color: rgba(255, 255, 255, .6);*/
+    text-shadow: 2px 1px 2px #000;
+}
+
+#homeContent > h3
+{
+    font-size: 2.5em;
+    font-weight: 700px;
+
+    /*color: rgba(255, 255, 255, .7);*/
+    text-shadow: 2px 1px 2px #000;
+}
+
+#homeSocialContainer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.homeButton
+{
+    /*font-weight: 700px;*/
+    /*margin-left: 10px;*/
+    margin-bottom: 10px;
+
+    background-color: #c0c0c0;
+    color: #00004d;
+    box-shadow: 2px 1px 2px #000;
+}
+
+/****************************************
+        About Section
+****************************************/
+.aboutSection
+{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url( '../images/sky.png' );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: 100% 100%;
+            background-size: cover;
+}
+
+.aboutHeader > h2
+{
+    font-size: 3.5em;
+    font-weight: bold 700;
+
+    margin-top: 5%;
+
+    text-align: center;
+
+    color: white;
+    /*color: rgba(255, 255, 255, .6);*/
+    text-shadow: 2px 1px 2px #00004d;
+}
+
+/*.aboutContentRow {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-auto: auto;
+}*/
+
+#aboutLeft
+{
+    color: white;
+    font-size: 1.5em;
+    font-weight: normal;
+
+    padding-top: 10%;
+    padding-bottom: 25%;
+    padding-left: 10%;
+}
+
+.aboutLink > a
+ {
+    color: #66ffff;
+    text-decoration: none
+}
+
+.aboutLink > a: hover,
+.aboutLink > a: focus
+{
+    color: #f0ad4e;
+
+}
+
+
+#aboutRight
+{
+    /*margin-top: 10%;*/
+    /*margin-right: 10%;*/
+    padding-top: 20%;
+    padding-left: 40%;
+}
+
+.imageCircle
+{
+    width: 75%;
+    height: 75%;
+
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px 3px #c0c0c0,
+    -2px -2px 3px 3px #c0c0c0;
+}
+
+/*****************************************
+            Portfolio Section
+*****************************************/
+.portfolioSection
+{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+    color: #c0c0c0;
+    /*background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url("https://unsplash.com/photos/xekxE_VR0E");
+
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: 100% 100%;
+            background-size: cover;*/
+}
+
+.portfolioHeader > h2
+{
+    font-size: 4em;
+    font-weight: bold 700;
+
+    margin-top: 5%;
+
+    text-align: center;
+
+    /*color: rgba(255, 255, 255, .6);*/
+    color: white;
+    text-shadow: 2px 1px 2px #00004d;
+}
+
+.portfolioHeader > h3
+{
+    font-size: 2em;
+    font-weight: bold 700;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, .6);
+    text-shadow: 2px 1px 2px #000;
+}
+
+
+.portfolioCard {
+    color: #00004d;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 900px;
+}
+
+.cardHeadder, .cardDescription{
+    padding: 10px;
+}
+
+
+/****************************************
+            Content Section
+****************************************/
+
+.connectSection
+{
+    width: 100%;
+    height: 1024px;
+    padding-top: 50px;
+
+    color: white;
+    background-image:
+        linear-gradient(
+          rgba(0, 0, 0, 0.25),
+          rgba(0, 0, 0, 0.25)
+        ),
+        url('../images/desktop.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: 100% 100%;
+            background-size: cover;
+}
+
+.connectHeader > h2
+{
+    font-size: 3.5em;
+    font-weight: bold 700;
+
+    margin-top: 5%;
+
+    text-align: center;
+
+    /*color: rgba(255, 255, 255, .6);*/
+    color: white;
+    text-shadow: 2px 1px 2px #00004d;
+}
+
+.connectContent
+{
+    margin: 10%;
+}
+
+.connectLink > a,
+.connectLink > a:hover,
+.connectLink > a:focus,
+.connectLink > a:visited
+{
+    color: white;
+    text-decoration: none;
+}
+
+.connectContentLeft
+{
+    float: right;
+}
+
+.connectContentRight h5 {
+    line-height: 1.5;
+    max-width: 600px;
+    float: left
+    font-size: 2em;
+}

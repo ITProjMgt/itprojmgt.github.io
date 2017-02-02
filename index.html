@@ -1,72 +1,75 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>Portfolio - Nick Coleman</title>
-		<!-- CSS: Bootstrap, Font-Awesome, Google Fonts, local -->
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta property="og:site_name" content="Nick Coleman - Full-Stack Developer"/>
+		<meta property="name" content="Nick Coleman - Full-Stack Developer"/>
+		<meta property="og:title" content="Nick Coleman - Portfolio Site: About, Portfolio, Connect"/>
+		<meta property="og:description" content="Nick Coleman is full-stack developer who also holds a Project Management Professional
+			certification and an extensive background with startup companies.  Nick understands how software design and development impact
+			both the customer experience and the resulting impact to company profitability.  "/>
+		<meta property="og:image" content="~/images/nickcoleman.io.png">
+		<meta property="og:type" content="website"/>
+		<meta property="og:profile:first_name" content="Nick"/>
+		<meta property="og:profile:last_name" content="Coleman"/>
+		<meta property="twitter:card" content="View Profile"/>
+		<meta property="twitter: title" content="Nick Coleman - Full Stack Developer Portfolio Site"/>
+		<meta property="twitter: description" content="Nick Coleman is full-stack developer who also holds a Project Management Professional
+			certification and an extensive background with startup companies.  Nick understands how software design and development impact
+			both the customer experience and the resulting impact to company profitability.  "/>
+		<meta property="twitter: tweet" content="http://goo.gl/NZviSk"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,700italic,900italic,400italic,900,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href="./favicon.ico" rel="icon" type="image/x-icon"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" id="hamburger" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img class='navbarLogo' src="./images/logo.png" /> Nick Coleman</a>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#home">Home</a>
+          <a class="nav-item nav-link" href="#about">About</a>
+          <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+          <a class="nav-item nav-link" href="#connect">Connect</a>
+        </div>
+      </div>
+    </nav>
 
-	</head>
-	
-	<body>
-
-		<!-- Top Navigation Bar -->
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-		  <div class="container">
-		    <div class="navbar-header">
-		    	<!-- collapsed menu button -->
-		    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				    <span class="sr-only">Toggle navigation</span>
-				    <span class="icon-bar"></span>
-				    <span class="icon-bar"></span>
-				    <span class="icon-bar"></span>
-			    </button>
-		     	<a class="navbar-brand" href="#home"><i class="fa fa-css3"></i> Proj Mgt - Dev</a>
-		    </div>
-
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		    <ul class="nav navbar-nav navbar-right">
-        		<li><a href="#home">Home</a></li>	
-        		<li><a href="#about">About</a></li>	
-        		<li><a href="#portfolio">Portfolio</a></li>	
-        		<li><a href="#connect">Connect</a></li>	
-		    </div>
-		  </div>
-		</nav>
-
-		<!-- Section - Home -->
+    <!-- Section - Home -->
 		<div class="container homeSection">
 			<a name="home"></a>
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="col-xs-12">
 					<div id="homeContent">
 						<h1>Nick Coleman</h1>
-						<h3>Full Stack Developer - Project Manager</h3>
-						<hr>
-						<div class="container">
-							<div class="row" >
-								<div class=" col-md-3 col-sm-6 col-xs-12">
-									<a href="https://www.facebook.com/itprojmgt/" target="blank">
-										<button type="button" class="btn btn-default btn-lg homeButton"><i class="fa fa-facebook"></i> Facebook</button>
-									</a>
-								</div>
-								<div class=" col-md-3 col-sm-6 col-xs-12">
-									<a href="https://www.linkedin.com/in/colemannicholas" target="blank">
-										<button type="button" class="btn btn-default btn-lg homeButton"><i class="fa fa-linkedin"></i> Linked-In</button>
-									</a>
-								</div>
-								<div class=" col-md-3 col-sm-6 col-xs-12">
+						<h3>Full Stack Developer</h3>
+						<hr />
+						<h3>Park City Utah</h3>
+						<div class="container" id="homeSocialContainer">
+							<div class="row socialRow"  >
+								<hr>
+								<div class="col-xs-12 col-md-4">
 									<a href="https://github.com/nickcoleman" target="blank">
-										<button type="button" class="btn btn-default btn-lg homeButton"><i class="fa fa-github"></i> GitHub</button>
+										<div class="btn btn-secondary btn-sm homeButton"><i class="fa fa-github"></i> GitHub</div>
 									</a>
 								</div>
-								<div class=" col-md-3 col-sm-6 col-xs-12">
-									<a href="http://www.freecodecamp.com/nickcoleman" target="blank">
-										<button type="button" class="btn btn-default btn-lg homeButton"><i class="fa fa-fire fa-fw"></i> freeCodeCamp</button>
+								<div class="col-xs-12 col-md-4">
+									<a href="https://www.linkedin.com/in/nick-coleman" target="blank">
+										<div class="btn btn-secondary btn-sm homeButton"><i class="fa fa-linkedin"></i> Linked-In</div>
+									</a>
+								</div>
+								<div class="col-xs-12 col-md-4">
+									<a href="https://www.facebook.com/itprojmgt/" target="blank">
+										<div class="btn btn-secondary btn-sm homeButton"><i class="fa fa-facebook"></i> Facebook</div>
 									</a>
 								</div>
 							</div>
@@ -76,102 +79,248 @@
 			</div>
 		</div>
 
-				<!-- Section - About -->
+		<!-- Section - About -->
+		<a name="about"></a>
 		<div class="container aboutSection">
-			<a name="about"></a>
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="col-xs-12 aboutContent aboutHeader">
-					<h1>Full Stack Development and Project Management</h1>
+					<h2>About</h2>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-6 col-xs-12 aboutContent">
+			<div class="row" id="aboutContentRow" >
+				<div class="col-sm-8 col-xs-12 aboutContent">
 					<div id="aboutLeft">
-					
-					<p>Over 30 years experience in the computer/communications career field</p>
-					<p>Project Management Professional (PMP)</p>
-					<p> I'm retired Air Force Lieutenant Colonel and spent my AF career in the Information Technology field. Post-military, I've run IT operations at multiple startups. And, I run my own small business now.</p>
-					<p>I'm realigning that business to what I've always loved -- working as a developer with a focus on full-stack web development.</p>
-					<p>Languages and Frameworks include: React/Redux, MongoDB, Node.js, Javascript, HTML5, CSS, C#, Swift</p>
-					<p>Methodologies: Agile, Responsive Design, PMBOK</p>
+						<p>Over 30 years experience in the Information Technology career field</p>
+						<p> I'm a retired Air Force Lieutenant Colonel and spent my career in the
+							computer and networking field. Post-military, I've run IT Operations/Project
+							Management at multiple startups. And, I have my own company that focuses on
+							<span class="aboutLink"><a href="http://www.realestateclientmanagement.com/" target="blank">
+								Customer Relationship Management software
+							</a></span>.
+						</p>
+						<p> I've always loved the creative process of developing software...
+							both it's design and coding aspects. So, I pivoted to software development as a career focus.
+							My background gives me a unique perspective on the entire software life-cycle and the importance
+							of developing software that is built with the customer in mind at it's core.
+						</p>
+						<p>I also love helping others.  This includes working pro-bono as a mentor with
+							<span class="aboutLink"><a href="http://www.pandolabs.org/" target="_blank" >
+								PandoLabs
+							</a></span>
+							to train low-income service industry and rural workers to become full-stack web
+							developers. And, assisting self-motivated individuals to learn to code through through
+							FreeCodeCamp Salt Lake City.
+						</p>
+						<p>
+							<span class="aboutLink"><a href="http://www.projectmanagement.com/profile/nickcoleman" target="blank">
+								Project Management Professional (PMP) -- PMI Cert #: 1342546
+							</a></span>
+						</p>
+						<p>
+							<span class="aboutLink"><a href="http://www.itprojmgt.com/assets/docs/resume.pdf" target="_blank">
+								See Full Resume
+							</a></span>
+						</p>
 					</div>
 				</div>
-				<div class="col-md-6 col-xs-12 hidden-sm aboutContent">
+				<div class="col-sm-4 clearfix hidden-xs-down aboutContent">
 					<div id="aboutRight">
-						<img class="imageCircle" src="http://goo.gl/NZviSk">
+						<img class="imageCircle" src="http://goo.gl/NZviSk" alt="Nick Coleman - Full Stack Web Developer">
 					</div>
-					
 				</div>
 			</div>
 		</div>
 
 		<!-- Section - Portfolio -->
 
+		<a name="portfolio"></a>
 		<div class="container portfolioSection">
-		  	<a name="portfolio"></a>
-		  	<div class="row ">
+		  	<div class="row justify-content-center">
 			    <div class="col-xs-12 portfolioHeader">
-			      <h1>Portfolio</h1>
-			      <h3>Recent FCC Projects<h3>
+			      <h2>Portfolio</h2>
+					</div>
+			 	</div>
+				<div class="container">
+					<div class="row">
+
+				<!-- Barley Hopper -->
+            <div class="col-md-6 col-lg-4">
+							<div class="card portfolioCard">
+								<img src="./images/BarleyHopper_MainScene.png" alt="Barley Hopper - find that perfect microbrew" class="card-img-top img-fluid">
+								<div class='text-center cardHeader'>
+									<h2 class='card-title'>Barley Hopper</h2>
+									<h4 class='card-text'>Helping You Find That Perfect Micro-Brew</h4>
+								</div>
+								<div class="text-center cardContent">
+									<p class="card-text cardDescription">
+										Mobile application.  Allows users to find breweries by either their geolocation
+										or by providing a location.  Built using React-Native w/ Redux.
+									</p>
+									<p class="card-text">Frameworks</p>
+									<div class="card-text text-left">
+										<ul>
+											<li>React-Native</li>
+											<li>Redux</li>
+											<li>api: AirBnB Mapping</li>
+											<li>api: Google GeoLocation</li>
+										</ul>
+									</div>
+									<div class="card-text text-center">
+										<a href="https://github.com/nickcoleman/barleyHop" target="blank" class="card-link">GitHub</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+				<!-- yaarn -->
+						<div class="col-md-6 col-lg-4">
+							<div class="card portfolioCard">
+								<img src="./images/yaarn-logo.png" alt="yaarn -- knit your own tale through pictures" class="card-img-top img-fluid">
+								<div class='text-center cardHeader'>
+									<h2 class='card-title'>yarrn</h2>
+									<h4>Knitting Stories Through Pictures</h4>
+								</div>
+								<div class="text-center cardContent">
+									<p class="card-text cardDescription">
+										Yaarn is about knitting together the threads of your life. Yaarn makes it easy
+										to layout the important moments in words and images. It also allows you to modify
+										the memories to reflect the feel of the moments in a pictorial diary.
+									</p>
+									<p class="card-text">Frameworks - Features</p>
+									<div class="card-text text-left">
+										<ul>
+											<li>React with Redux</li>
+											<li>MongoDB</li>
+											<li>Packages: react-dropzone, superagent, immutability-helper</li>
+											<li>
+												Features: responsive design, scrollable text boxes,
+												drop down menu for filters, popup modal
+											</li>
+										</ul>
+									</div>
+									<div class="card-text text-center">
+										<a href="https://yaarn.herokuapp.com/" target="blank" class="card-link">Live</a>
+										<a href="https://github.com/megelismi/tell_your_story_app" target="blank" class="card-link">GitHub</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Spaced Repitition -->
+            <div class="col-md-6 col-lg-4">
+							<div class="card portfolioCard">
+								<img src="./images/spacedRepititionLearning.png" alt="Spaced Repitition Learning built with React" class="card-img-top img-fluid">
+								<div class='text-center cardHeader'>
+									<h2 class='card-title'>Spaced Repitition Learning</h2>
+									<h4 class='card-text'>Learn A Subject Using Spaced Repitition Algorithms</h4>
+								</div>
+								<div class="text-center cardContent">
+									<p class="card-text cardDescription">
+										Client/Server Spaced Repitition Learning app. Users are authenticated using OAuth and
+										Google authentication. Questions and User history stored in MongoDB.  Server manages
+										question sets which are downloaded to the client -- which allows offline usage of the
+										app.  Client manages the question set using the spaced repitition algorithm.
+									</p>
+									<p class="card-text">Frameworks - Features</p>
+									<div class="card-text text-left">
+										<ul>
+											<li>React and Redux</li>
+											<li>MongoDB</li>
+											<li>Passport OAuth</li>
+										</ul>
+									</div>
+									<div class="card-text text-center">
+										<a href="https://germanrepitition.herokuapp.com/" target="blank" class="card-link">Live</a>
+										<a href="https://github.com/davellaj/flashCardApp" target="blank" class="card-link">GitHub</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Project Cards -->
+
+						<!-- Template Card: use to add additional projects
+            <div class="col-md-6 col-lg-4">
+							<div class="card portfolioCard">
+								<img src="./images/" alt="">
+								<div class='text-center cardHeader'>
+									<h2 class='card-title'>Title</h2>
+									<h4 class='card-text'>Sub-Title</h4>
+								</div>
+								<div class="text-center cardContent">
+									<p class="card-text cardDescription">
+										App description
+									</p>
+									<p class="card-text">Frameworks - Features</p>
+									<div class="card-text text-left">
+										<ul>
+											<li>React-Native</li>
+											<li>Redux</li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+									<div class="card-text text-center">
+										<a href="" target="blank" class="card-link">Live</a>
+										<a href="https://github.com/nickcoleman/" target="blank" class="card-link">GitHub</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					-->
+					</div>
 				</div>
-		 	</div>
-		  <div class="container" id="portfolioContent">
-		    <div class="row">
-			      <div class="col-xs-12 col-sm-6 col-md-4 portfolioProjects">
-				        <a href="http://codepen.io/nickcoleman/full/vGeerK/" target="blank">
-				        <img src="https://goo.gl/YNTLw6" class="portfolioImage" border='0'></a>
-			      </div>
-			      <div class="col-xs-12 col-sm-6 col-md-4 portfolioProjects">
-				        <a href="http://codepen.io/nickcoleman/full/reNNGr/" target="blank">
-				        <img src="https://goo.gl/cJeC4K" class="portfolioImage" border='0'></a>
-			      </div>
-			      <div class="col-xs-12 col-sm-6 col-md-4 portfolioProjects">
-				        <a href="http://codepen.io/nickcoleman/full/YqNmOV" target="blank">
-				        <img src="https://goo.gl/vGEYsY" class="portfolioImage" forder='0'></a>
-			      </div>
-		    </div>
-		  </div>
 		</div>
 
 		<!-- Section - Connect -->
+		<a name="connect"></a>
 		<div class="container connectSection">
-			<a name="connect"></a>
-			<div class="row" id="connectContent">
-				<div class="col-sm-12 col-md-6">
-					<h1>Connect with Nick Coleman at:</h1>
-					<h3>Email: nick@itprojmgt.com</h3>
+			<div class="row justify-content-center">
+				<div class="col-xs-12 connectHeader">
+					<h2>Connect</h2>
 				</div>
-				<div class="col-sm-12 col-md-6">
-					<div class="row" id="connectRight">	
-						<div class="col-xs-12">
-							<a href="https://www.facebook.com/itprojmgt/" target="blank">
-								<button type="button" class="btn btn-default btn-lg homeButton"><i class="fa fa-facebook"></i> Facebook</button>
-							</a>
-						</div>
-						<div class="col-xs-12">
-							<a href="https://www.linkedin.com/in/colemannicholas" target="blank">
-								<button type="button" class="btn btn-default btn-lg homeButton"><i class="fa fa-linkedin"></i> Linked-In</button>
-							</a>
-						</div>
-						<div class="col-xs-12">
-							<a href="https://github.com/nickcoleman" target="blank">
-								<button type="button" class="btn btn-default btn-lg homeButton"><i class="fa fa-github"></i> GitHub</button>
-							</a>
-						</div>
-						<div class="col-xs-12">
-							<a href="http://www.freecodecamp.com/nickcoleman" target="blank">
-								<button type="button" class="btn btn-default btn-lg homeButton"><i class="fa fa-fire fa-fw"></i> freeCodeCamp</button>
-							</a>
-						</div>				
-					</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col connectContent">
+					<span class="connectContentLeft">
+						<h2>Nick Coleman</h2>
+						<h4 class="connectLink"><a href="tel:14356407781">Google Voice: 435.200.3347</a></h4>
+						<h4 class="connectLink"><a href="mailto:nick@itprojmgt.com">Email: Nick@ITProjMgt.com</a></h4>
+					</span>
+				</div>
+				<div class="col connectContent connectContentRight">
+					<h5>
+						If you need a software developer who understands that customer experience with a software
+						application directly impacts profitability and who understands software project management,
+						takes ownership of problems, and has helped start-up companies succeed, get in touch and we'll chat.
+					</h5>
+				</div>
+			</div>
+			<div class="row connectContentSocial justify-content-center">
+				<div class="col">
+				</div>
+				<div class="col">
+					<a href="https://www.facebook.com/itprojmgt/" target="blank">
+						<button type="button" class="btn btn-secondary btn-md homeButton"><i class="fa fa-facebook"></i> Facebook</button>
+					</a>
+				</div>
+				<div class="col">
+					<a href="https://www.linkedin.com/in/nick-coleman" target="blank">
+						<button type="button" class="btn btn-secondary btn-md homeButton"><i class="fa fa-linkedin"></i> Linked-In</button>
+					</a>
+				</div>
+				<div class="col">
+					<a href="https://github.com/nickcoleman" target="blank">
+						<button type="button" class="btn btn-secondary btn-md homeButton"><i class="fa fa-github"></i> GitHub</button>
+					</a>
+				</div>
+				<div class="col">
 				</div>
 			</div>
 		</div>
 
-
-		<!-- JavaScript: JQuery and Bootstrap-->
-		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	</body>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
 </html>
-
